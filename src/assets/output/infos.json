@@ -83,10 +83,6 @@
     "footer":{
         "menus":[
             {
-                "name":"Nossas Marcas",
-                "link":"/#nossasMarcas"
-            },
-            {
                 "name":"Sobre Nós",
                 "link":"/#sobreNos"
             },
