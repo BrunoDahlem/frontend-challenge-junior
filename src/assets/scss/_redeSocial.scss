@@ -1,0 +1,49 @@
+.rede-social {
+    padding: 40px 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > .imgContainer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        > .img {
+            padding: 10px;
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            border-radius: 10px;
+        }
+        > .descInsta {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            padding: 0 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(25%);
+            border-radius: 10px;
+            > .desc {
+                color: #fff;
+                text-shadow: 0 0 20px black;
+            }
+        }
+    }
+    @media (max-width:991px) {
+        > .imgContainer {
+            flex-direction: column;
+            align-items: center;
+            > .img {
+                width: 400px;
+                height: 400px;
+            }
+            > .descInsta {
+                transform: translateY(0);
+                margin: 10px 0;
+                > .desc {
+                    color: #fff;
+                    text-shadow: 0 0 20px black;
+                }
+            }
+        }
+    }
+}

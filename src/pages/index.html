@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    >
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="container -logo">
+        </div>
+        <div class="container">
+            <div id="menu-burger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="modal-menu" style="transform:translateY(-1000px);">
+                <ul class="menuMobile">    
+                </ul>
+            </div>
+            <ul class="menu">    
+            </ul>
+        </div>
+        <div class="container">
+            <ul class="icons">
+                <li class="icon"><a id="search"></a></li>
+                <li class="icon"><a id="avatar"></a></li>
+                <li class="icon"><a id="carrinho"></a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main-contain">
+        <div class="banner-global">
+            <div class="swiper -banner">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper -banner">
+                <!-- Slides -->
+                <div class="swiper-slide -banner"><img src="https://picsum.photos/1920/520" ></div>
+                <div class="swiper-slide -banner"><img src="https://picsum.photos/1920/520" ></div>
+                <div class="swiper-slide -banner"><img src="https://picsum.photos/1920/520" ></div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination -banner"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev -banner"></div>
+                <div class="swiper-button-next -banner"></div>
+            </div>
+        </div>
+        <div class="marcas-container" id="nossasMarcas">
+
+        </div>
+        <div class="infos-container" id="sobreNos">
+            <div class="description"></div>
+            <div class="banner-container">
+                <div class="infoBanner">
+                    
+                </div>
+                <div class="infoBanner2">
+                    <div class="imgBanner"></div>
+                    <div class="titleBanner"></div>
+                    <div class="descBanner"></div>
+                    <div class="imgBanner"></div>
+                    <div class="titleBanner"></div>
+                    <div class="descBanner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="infos-produtos" id="nossosProdutos">
+            <div class="img"></div>
+            <div class="description"></div>
+            <div class="swiper -product">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper -product">
+                <!-- Slides -->
+                <div class="swiper-slide -product"><img src="https://picsum.photos/600/300" ></div>
+                <div class="swiper-slide -product"><img src="https://picsum.photos/600/300" ></div>
+                <div class="swiper-slide -product"><img src="https://picsum.photos/600/300" ></div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination -product"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev -product"></div>
+                <div class="swiper-button-next -product"></div>
+            </div>
+        </div>
+        <div class="rede-social" id="insta">
+            <div class="title"></div>
+            <div class="imgContainer">
+                <div class="img"></div>
+                <div class="descInsta"></div>
+                <div class="img"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <div class="container -logo">
+
+        </div>
+        <div class="container -menu">
+            <div class="subMenu">
+                <h2 class="title">Menu</h2>
+                <ul class="subMenus"></ul>
+            </div>
+            <div class="newsLetter">
+                <h2 class="title"> Newsletter</h2>
+                <form action="" class="formNews">
+                    <input type="text" name="emailNews" placeholder="E-mail" id="emailNews">
+                    <button type="button" id="btnNews">Enviar</button>
+                </form>
+            </div>
+            <div class="redesSociais">
+                <h2 class="title">Redes Sociais</h2>
+                <ul class="icons">
+                </ul>
+            </div>
+        </div>
+        <div class="container -copyright">
+            <p class="copyright"></p>
+        </div>
+    </footer>
+    <div class="modalBG">
+        <div class="modal-confirmation">
+            <div class="head"><a id="closeModalConfirmation">X</a></div>
+            <div class="body"><h2 class="desc">Enviado com sucesso</h2></div>
+        </div>
+    </div>
+    <div class="modal-cadastro">
+        <div class="head"><a id="closeModalCadastro">X</a></div>
+        <div class="body">
+            <form class="formCadastro">
+                <input class="inputCadastro" type="text" name="email" id="email" placeholder="E-mail">
+                <input class="inputCadastro" type="password" name="pass" id="pass" placeholder="Senha">
+                <input class="inputCadastro" type="password" name="passRepet" id="passRepet" placeholder="Repetir a senha">
+                <button type="button" id="cadastro">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/scripts/Gets.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
