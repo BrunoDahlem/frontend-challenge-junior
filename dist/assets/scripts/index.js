@@ -6,6 +6,7 @@ const modalCadastroClose = document.querySelector('#closeModalCadastro');
 const modalCadastro = document.querySelector('.modal-cadastro');
 const btnSubmit = document.querySelector('#btnNews');
 const btnCadastro = document.querySelector('#avatar');
+const btnCadastroMobile = document.querySelector('#avatarMobile');
 const menuBurger = document.querySelector('#menu-burger');
 const menuBurgerClose = document.querySelector('.change');
 const menuBurgerLinks = document.querySelector('#marcas');
@@ -62,6 +63,10 @@ btnSubmit.addEventListener('click',(event) => {
 btnCadastro.addEventListener('click',(event) => {
     event.preventDefault();
     modalCadastro.style.transform = "translateY(90px)";
+});
+btnCadastroMobile.addEventListener('click',(event) => {
+    event.preventDefault();
+    modalCadastro.style.transform = "translateY(290px)";
 });
 
 modalCadastroClose.addEventListener('click',(event) => {

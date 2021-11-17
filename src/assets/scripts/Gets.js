@@ -37,6 +37,9 @@ const Creates = (obj,tag) => {
     let search = document.querySelector('#search');
     let avatar = document.querySelector('#avatar');
     let carrinho = document.querySelector('#carrinho');
+    let searchMobile = document.querySelector('#searchMobile');
+    let avatarMobile = document.querySelector('#avatarMobile');
+    let carrinhoMobile = document.querySelector('#carrinhoMobile');
     let saida = '';
     try {
         for (let i = 0; i < obj.length; i++) {
@@ -51,12 +54,15 @@ const Creates = (obj,tag) => {
                 if(name == 'search') {
                     saida = `<img src="${src}" alt="${name}">`;
                     search.innerHTML = saida;
+                    searchMobile.innerHTML = saida;
                 }else if(name == 'avatar') {
                     saida = `<img src="${src}" alt="${name}">`;
                     avatar.innerHTML = saida;
+                    avatarMobile.innerHTML = saida;
                 }else if(name == 'carrinho') {
                     saida = `<img src="${src}" alt="${name}">`;
                     carrinho.innerHTML = saida;
+                    carrinhoMobile.innerHTML = saida;
                 }
             }else if(tag == 'footerMenu'){
                 const {name,link} = obj[i];

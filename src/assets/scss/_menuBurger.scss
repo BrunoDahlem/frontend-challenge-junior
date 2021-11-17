@@ -43,8 +43,32 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: 100%;
+        height: 80%;
         .link {
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+            &::after {
+                content: '';
+                width: 0;
+                height: 2px;
+                background: transparent;
+                transition: .5s;
+            }
+            &:hover::after {
+                width: 60%;
+                background:rgb(0, 122, 197) ;
+            }
+        }
+    }
+    > .iconsMobile {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        .icon {
             color: #333;
             display: flex;
             flex-direction: column;
