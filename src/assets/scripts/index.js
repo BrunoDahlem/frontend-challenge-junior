@@ -31,24 +31,7 @@ const banner = new Swiper(document.querySelector('.swiper.-banner'), {
         prevEl: document.querySelector('.swiper-button-prev.-banner'),
     },
 });
-const bannerMobile = new Swiper(document.querySelector('.swiper.-bannerMobile'), {
-    // Optional parameters
-    speed: 400,
-    effect: 'slide',
-    direction: 'horizontal',
-    loop: true,
-    // If we need pagination
-    pagination: {
-        el: document.querySelector('.swiper-pagination.-bannerMobile'),
-    },
-    // Navigation arrows
-    navigation: {
-        nextEl: document.querySelector('.swiper-button-next.-bannerMobile'),
-        prevEl: document.querySelector('.swiper-button-prev.-bannerMobile'),
-    },
-});
 banner.autoplay.start();
-bannerMobile.autoplay.start();
 const products = new Swiper(document.querySelector('.swiper.-product'), {
     speed: 400,
     effect: 'cards',
