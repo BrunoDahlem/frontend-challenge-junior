@@ -8,10 +8,6 @@
         ],
         "menus":[
             {
-                "name":"Nossas Marcas",
-                "link":"/#nossasMarcas"
-            },
-            {
                 "name":"Sobre Nós",
                 "link":"/#sobreNos"
             },
@@ -75,11 +71,11 @@
         "desc":"No mundo atual, a necessidade de renovação processual possibilita uma melhor visão global dos níveis de motivação departamental. Neste sentido, o acompanhamento das preferências de consumo pode nos levar a considerar a reestruturação das diversas correntes de pensamento. A nível organizacional, a revolução dos costumes promove a alavancagem dos relacionamentos verticais entre as hierarquias. Podemos já vislumbrar o modo pelo qual o início da atividade geral de formação de atitudes causa impacto indireto na reavaliação das condições financeiras e administrativas exigidas.",
         "banner":[
             {
-                "src":"/assets/img/Vendas-de-Filhote.jpg",
+                "src":"https://i.picsum.photos/id/684/400/400.jpg?hmac=3hTRh_dberwEDstAxoWCA4Qd1DiVFhfiLurcOveRWAc",
                 "alt":"Banner 1"
             },
             {
-                "src":"/assets/img/Adocao-de-Filhotes.jpg",
+                "src":"https://i.picsum.photos/id/910/400/400.jpg?hmac=m24_JMRlHXQf8s9XK098xDDn9wQvtVQYM2YMRKLoQ1A",
                 "alt":"Banner 2"
             }
         ]
