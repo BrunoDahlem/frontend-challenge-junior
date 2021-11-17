@@ -93,6 +93,10 @@
             border-radius: 10px;
             cursor: pointer;
             padding: 10px;
+            &:hover {
+                box-shadow: inset #fff 6px 6px 12px;
+                transform: scale(1.01);
+            }
         }
     }
     @media (max-width:991px) {
