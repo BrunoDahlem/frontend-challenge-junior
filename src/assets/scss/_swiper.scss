@@ -121,6 +121,12 @@
             height: 15px;
         }
     }
+    @media (max-width:1024px) {
+        &.-product {
+            position: relative;
+            left: 0;
+        }
+    }
     @media (max-width:991px) {
         &.-banner {
             height: 400px;

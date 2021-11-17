@@ -45,6 +45,31 @@
             }
         }
     }
+    @media (max-width:1024px) {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+        height: auto;
+        > .description {
+            width: 100%;
+        }
+        > .banner-container {
+            width: 100%;
+            .imgBanner {
+                width: auto;
+                height: auto;
+            }
+            > .infoBanner {
+                transform: translateY(0);
+                margin: 0;
+                height: auto;
+            }
+            > .infoBanner2 {
+                height: auto;
+            }
+        }
+    }
     @media (max-width:991px) {
         justify-content: center;
         align-items: center;
