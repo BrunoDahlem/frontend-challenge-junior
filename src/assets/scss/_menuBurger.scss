@@ -51,9 +51,6 @@
             justify-content: center;
             align-items: center;
             transition: .5s;
-            &:hover {
-                text-shadow: rgb(0, 122, 197) 1px 1px 10px;
-            }
             &::after {
                 content: '';
                 width: 0;
