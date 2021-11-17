@@ -69,7 +69,8 @@
                     cursor: pointer;
                     transition: .5s;
                     &:hover {
-                        box-shadow: rgb(0, 122, 197) 4px 4px 12px;
+                        box-shadow: #fff 6px 6px 12px;
+                        transform: scale(1.01);
                     }
                 }
                 #emailNews {
