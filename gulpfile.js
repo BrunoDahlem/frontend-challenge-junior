@@ -19,14 +19,14 @@ gulp.task('sass', () => {
 gulp.task('js', () => {
     return gulp
     .src(`src/assets/scripts/*.js`)
-    /*.pipe(minifyJs({
+    .pipe(minifyJs({
         ext:{
             src:'-debug.js',
             min:'.js'
         },
         exclude: ['tasks'],
         ignoreFiles: ['.combo.js', '-min.js','-debug.js']
-    }))*/
+    }))
     .pipe(gulp.dest(`dist/assets/scripts/`))
     .pipe(browserSync.stream());
 });
