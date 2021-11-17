@@ -66,7 +66,7 @@ btnCadastro.addEventListener('click',(event) => {
 });
 btnCadastroMobile.addEventListener('click',(event) => {
     event.preventDefault();
-    modalCadastro.style.transform = "translateY(290px)";
+    modalCadastro.style = "transform:translateY(90px);";
 });
 
 modalCadastroClose.addEventListener('click',(event) => {
