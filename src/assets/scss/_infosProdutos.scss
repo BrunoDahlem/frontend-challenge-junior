@@ -20,6 +20,10 @@
             border: 2px solid #333;
             border-radius: 10px;
             color: #333;
+            transition: .5s;
+            &:hover {
+                box-shadow: rgb(0, 122, 197) 4px 4px 12px;
+            }
         }
     }
     @media (max-width:991px) {
@@ -29,8 +33,8 @@
         border-radius: 0 10px 10px 0;
         flex-direction: column;
         > .img {
-            width: 400px;
-            height: 400px;
+            width: 200px;
+            height: 280px;
         }
         > .description {
             width: 100%;

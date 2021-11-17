@@ -42,6 +42,9 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
+                    &:hover {
+                        text-shadow: rgb(0, 122, 197) 1px 1px 10px;
+                    }
                     &::after {
                         content: '';
                         width: 0;
@@ -51,7 +54,7 @@
                     }
                     &:hover::after {
                         width: 60%;
-                        background:red;
+                        background:rgb(0, 122, 197) ;
                     }
                 }
             }
@@ -67,6 +70,10 @@
                     width: 60px;
                     border-radius: 10px;
                     cursor: pointer;
+                    transition: .5s;
+                    &:hover {
+                        box-shadow: rgb(0, 122, 197) 4px 4px 12px;
+                    }
                 }
                 #emailNews {
                     width: 60%;
@@ -100,8 +107,12 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
+                        transition: .5s;
                         > .name {
                             margin: 0 0 0 10px;
+                        }
+                        &:hover {
+                            text-shadow: rgb(0, 122, 197) 1px 1px 10px;
                         }
                     }
                     &::after {
@@ -114,7 +125,7 @@
                     }
                     &:hover::after {
                         width: 60%;
-                        background:red;
+                        background:rgb(0, 122, 197) ;
                     }
                 }
             }
