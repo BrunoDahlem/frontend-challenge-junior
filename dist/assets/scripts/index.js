@@ -1,4 +1,4 @@
-const menus = '../assets/output/infos.json';
+const menus = '/assets/output/infos.json';
 Gets();
 const modalConfirmClose = document.querySelector('#closeModalConfirmation');
 const modalConfirm = document.querySelector('.modalBG');
@@ -8,13 +8,7 @@ const btnSubmit = document.querySelector('#btnNews');
 const btnCadastro = document.querySelector('#avatar');
 const btnCadastroMobile = document.querySelector('#avatarMobile');
 const menuBurger = document.querySelector('#menu-burger');
-const menuBurgerClose = document.querySelector('.change');
-const menuBurgerLinks = document.querySelector('#marcas');
 const menuBurgerList = document.querySelector('#modal-menu');
-
-
-const swiperBanner = document.querySelector('.swiper.-banner');
-const swiperProducts = document.querySelector('.swiper.-product');
 
 const banner = new Swiper(document.querySelector('.swiper.-banner'), {
     // Optional parameters
@@ -47,6 +41,31 @@ const products = new Swiper(document.querySelector('.swiper.-product'), {
         nextEl: document.querySelector('.swiper-button-next.-product'),
         prevEl: document.querySelector('.swiper-button-prev.-product'),
     },
+});
+const marcas = new Swiper(document.querySelector('.swiper.-marcas'), {
+    speed: 400,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    // If we need pagination
+    pagination: {
+        el: document.querySelector('.swiper-pagination.-marcas'),
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: document.querySelector('.swiper-button-next.-marcas'),
+        prevEl: document.querySelector('.swiper-button-prev.-marcas'),
+    },
+    breakpoints: {
+        320: {
+            spaceBetween: 30
+        },
+        480: {
+            spaceBetween: 45
+        },
+        640: {
+            spaceBetween: 45
+        }
+    }
 });
 
 modalConfirmClose.addEventListener('click',(event) => {

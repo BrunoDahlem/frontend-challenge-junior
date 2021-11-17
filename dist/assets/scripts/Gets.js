@@ -1,3 +1,4 @@
+
 const Gets = () => {
     // Pega os menus com fetch do arquivo infos.json
     fetch(menus,{method: "GET"})
